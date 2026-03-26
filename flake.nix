@@ -9,8 +9,8 @@
     {
       devShells.x86_64-linux.default = pkgs.mkShell {
         packages = with pkgs; [
-          pkgsCross.riscv32-embedded.buildPackages.gcc
-          pkgsCross.riscv32-embedded.buildPackages.binutils
+          pkgsCross.riscv64.buildPackages.gcc
+          pkgsCross.riscv64.buildPackages.binutils
           qemu
           asm-lsp
         ];
