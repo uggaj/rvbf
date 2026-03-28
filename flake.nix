@@ -12,7 +12,6 @@
           pkgsCross.riscv64.buildPackages.gcc
           pkgsCross.riscv64.buildPackages.binutils
           qemu
-          asm-lsp
         ];
       };
     };
