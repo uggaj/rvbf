@@ -35,8 +35,7 @@ incr:
     j interp
 decr:
     lb t0, 0(s3)
-    li t1, 1
-    sub t0, t0, t1
+    addi t0, t0, -1
     sb t0, 0(s3)
     addi s2, s2, 1
     j interp
@@ -74,9 +73,11 @@ interp:
     beq t1, t0, brwd
     li t0, '.'
     beq t1, t0, print
-    
-    .globl start
-start:  
+    addi s2, s2, 1
+    j interp
+
+    .globl _start
+_start:
     jal ra, load
     jal ra, read
     la s2, buffer
