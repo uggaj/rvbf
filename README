@@ -1,5 +1,5 @@
 rvbf - RISC-V Brainfuck Interpreter
-====================================
+===================================
 
 A minimal Brainfuck interpreter written in RISC-V32 assembly, targeting Linux.
 
@@ -23,4 +23,4 @@ A simple test program is already given.
 
 Note
 ====
-Still havent implemented the logic for [, ] and , instructions...
+Still havent implemented the logic for '[' , ']' and ',' instructions...
