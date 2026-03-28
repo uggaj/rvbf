@@ -1,0 +1,26 @@
+rvbf - RISC-V Brainfuck Interpreter
+====================================
+
+A minimal Brainfuck interpreter written in RISC-V32 assembly, targeting Linux.
+
+Who am I kidding... Its a toy ...
+
+You gots to have riscv toolchain from gnu or someplace else to build the thing.
+`riscv64-unknown-linux-gnu-gcc` should do the trick.
+Oh and an emulator would be nice to have too... `qemu` should work well.
+
+If you are a nix user... well... you know what to do.
+
+Now that everything is setup just run:
+
+`riscv64-unknown-linux-gnu-gcc -nostdlib -static -mabi=ilp32 -march=rv32i interp.s -o rvbf`
+
+followed by:
+
+`qemu-riscv32 ./rvbf path/to/program.bf`
+
+A simple test program is already given.
+
+Note
+====
+Still havent implemented the logic for [, ] and , instructions...
