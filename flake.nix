@@ -1,5 +1,5 @@
 {
-  description = "rvbf: A risc-v brainf**k interpretter";
+  description = "rvbf: A Brainfuck interpreter";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   outputs =
     { self, nixpkgs }:
